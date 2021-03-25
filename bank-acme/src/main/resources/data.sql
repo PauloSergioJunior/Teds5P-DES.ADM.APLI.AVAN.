@@ -1,0 +1,1 @@
+INSERT INTO TB_CLIENTS (name,email,phone) VALUES ('Paulo','paulo.email.com','0000000');
