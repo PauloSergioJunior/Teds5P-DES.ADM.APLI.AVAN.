@@ -3,6 +3,7 @@ package br.com.bank.acme.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import br.com.bank.acme.domain.Client;
@@ -54,6 +55,7 @@ public class ClientServiceImpl implements ClientService {
 
 	@Override
 	public Client create(Client client) {
+		//BeanUtils.copyProperties(O que esta vindo da request, O que tem no banco de dados );
 		return this.repository.save(client);
 	}
 
